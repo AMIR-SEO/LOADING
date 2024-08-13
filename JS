@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+.download-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.download-button {
+    background-color: #008CBA;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.download-button:hover {
+    background-color: #005f6b;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+.progress-info {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* نوتیفیکیشن نصب */
+.install-notification {
+    display: none;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.install-notification button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.install-notification button:hover {
+    background-color: #005f6b;
+}
+
+/* بهینه سازی برای موبایل */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .download-container {
+        width: 100%;
+    }
+
+    .download-button {
+        font-size: 14px;
+    }
+
+    .progress-info {
+        font-size: 12px;
+    }
+
+    .install-notification {
+        padding: 10px;
+    }
+
+    .install-notification button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
